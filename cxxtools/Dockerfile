@@ -18,8 +18,6 @@ RUN  make install
 
 RUN  echo "/usr/local/lib" >  /etc/ld.so.conf.d/cxxtools.conf
 RUN  ldconfig
+RUN  rm -Rvf /tmp/cxxtools-2.2.1.tar.gz /tmp/cxxtools-2.2.1
 
-
-
-
-VOLUME ["/var/cxxtools/docker/workspace/"]
+VOLUME ["/var/docker/cxxtools/workspace/"]
