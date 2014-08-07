@@ -23,6 +23,6 @@ RUN  make install
 
 RUN  echo "/usr/local/lib" >  /etc/ld.so.conf.d/tntdb.conf
 RUN  ldconfig
-RUM rm -Rvf /tmp/tntdb-1.3 /tmp/tntdb-1.3.tar.gz
+RUN rm -Rvf /tmp/tntdb-1.3 /tmp/tntdb-1.3.tar.gz
 
 VOLUME ["/var/docker/tntdb/workspace/"]
